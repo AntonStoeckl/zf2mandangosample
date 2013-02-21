@@ -8,6 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'Zend\\' => $vendorDir . '/zendframework/zendframework/library/',
     'ZendTest\\' => $vendorDir . '/zendframework/zendframework/tests/',
+    'Twig_' => $vendorDir . '/twig/twig/lib/',
+    'Mandango\\Mondator\\' => $vendorDir . '/antonstoeckl/mondator/src/',
+    'Mandango\\' => $vendorDir . '/antonstoeckl/mandango/src/',
     'Application' => $baseDir . '/module/Application/src',
     'Album' => $baseDir . '/module/Album/src',
 );

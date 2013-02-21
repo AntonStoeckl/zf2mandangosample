@@ -150,5 +150,146 @@
             "framework",
             "zf2"
         ]
+    },
+    {
+        "name": "twig/twig",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fabpot/Twig.git",
+            "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fabpot/Twig/zipball/15336c154c960f7e55e8b9fc1043ce7764ed7edc",
+            "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "time": "2013-02-21 06:47:52",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.12-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "http://twig.sensiolabs.org",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
+        "name": "antonstoeckl/mondator",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/AntonStoeckl/mondator.git",
+            "reference": "a51f77c7004fda3162a63cf4d886600bbaaa1ecd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/AntonStoeckl/mondator/zipball/a51f77c7004fda3162a63cf4d886600bbaaa1ecd",
+            "reference": "a51f77c7004fda3162a63cf4d886600bbaaa1ecd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "twig/twig": ">=1.2"
+        },
+        "time": "2013-02-21 10:11:58",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Mandango\\Mondator\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Pablo Díez",
+                "email": "pablodip@gmail.com"
+            }
+        ],
+        "description": "Easy and flexible class generator for PHP",
+        "keywords": [
+            "class-generator"
+        ],
+        "support": {
+            "source": "https://github.com/AntonStoeckl/mondator/tree/master"
+        }
+    },
+    {
+        "name": "antonstoeckl/mandango",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/AntonStoeckl/mandango.git",
+            "reference": "98b3c878273dfdb4c725a71a3114aa2bfc6f709d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/AntonStoeckl/mandango/zipball/98b3c878273dfdb4c725a71a3114aa2bfc6f709d",
+            "reference": "98b3c878273dfdb4c725a71a3114aa2bfc6f709d",
+            "shasum": ""
+        },
+        "require": {
+            "antonstoeckl/mondator": "dev-master",
+            "php": ">=5.3.0"
+        },
+        "time": "2013-02-21 10:16:21",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Mandango\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Pablo Díez",
+                "email": "pablodip@gmail.com"
+            }
+        ],
+        "description": "Simple, poweful and ultrafast Object Document Mapper (ODM) for PHP and MongoDB",
+        "homepage": "http://mandango.org",
+        "keywords": [
+            "mongodb",
+            "odm"
+        ],
+        "support": {
+            "source": "https://github.com/AntonStoeckl/mandango/tree/master"
+        }
     }
 ]
