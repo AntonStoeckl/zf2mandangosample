@@ -29,6 +29,8 @@ class AlbumRepository
 
     public function deleteAlbum($id)
     {
+        $album = $this->fetchOneAlbumById($id);
 
+        $this->delete($album);
     }
 }
