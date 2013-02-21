@@ -12,5 +12,6 @@ return array(
     'Mandango\\Mondator\\' => $vendorDir . '/antonstoeckl/mondator/src/',
     'Mandango\\' => $vendorDir . '/antonstoeckl/mandango/src/',
     'Application' => $baseDir . '/module/Application/src',
+    'AntonStoeckl' => $baseDir . '/src',
     'Album' => $baseDir . '/module/Album/src',
 );
