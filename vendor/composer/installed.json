@@ -1,0 +1,154 @@
+[
+    {
+        "name": "firephp/firephp-core",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/firephp/firephp-core.git",
+            "reference": "f60753a8dd7817e4da6bc73e0e717387a9a0866a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/firephp/firephp-core/zipball/f60753a8dd7817e4da6bc73e0e717387a9a0866a",
+            "reference": "f60753a8dd7817e4da6bc73e0e717387a9a0866a",
+            "shasum": ""
+        },
+        "time": "2013-01-19 22:55:24",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "lib/FirePHPCore/FirePHP.class.php",
+                "lib/FirePHPCore/fb.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Christoph Dorn",
+                "email": "christoph@christophdorn.com",
+                "homepage": "http://christophdorn.com"
+            }
+        ],
+        "description": "Traditional FirePHPCore library for sending PHP variables to the browser.",
+        "homepage": "https://github.com/firephp/firephp-core"
+    },
+    {
+        "name": "zendframework/zendframework",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zf2.git",
+            "reference": "46a8fda13273ce42ea2e4cddaf6a604b6ab7f5ed"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zf2/zipball/46a8fda13273ce42ea2e4cddaf6a604b6ab7f5ed",
+            "reference": "46a8fda13273ce42ea2e4cddaf6a604b6ab7f5ed",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "replace": {
+            "zendframework/zend-authentication": "self.version",
+            "zendframework/zend-barcode": "self.version",
+            "zendframework/zend-cache": "self.version",
+            "zendframework/zend-captcha": "self.version",
+            "zendframework/zend-code": "self.version",
+            "zendframework/zend-config": "self.version",
+            "zendframework/zend-console": "self.version",
+            "zendframework/zend-crypt": "self.version",
+            "zendframework/zend-db": "self.version",
+            "zendframework/zend-debug": "self.version",
+            "zendframework/zend-di": "self.version",
+            "zendframework/zend-dom": "self.version",
+            "zendframework/zend-escaper": "self.version",
+            "zendframework/zend-eventmanager": "self.version",
+            "zendframework/zend-feed": "self.version",
+            "zendframework/zend-file": "self.version",
+            "zendframework/zend-filter": "self.version",
+            "zendframework/zend-form": "self.version",
+            "zendframework/zend-http": "self.version",
+            "zendframework/zend-i18n": "self.version",
+            "zendframework/zend-inputfilter": "self.version",
+            "zendframework/zend-json": "self.version",
+            "zendframework/zend-ldap": "self.version",
+            "zendframework/zend-loader": "self.version",
+            "zendframework/zend-log": "self.version",
+            "zendframework/zend-mail": "self.version",
+            "zendframework/zend-math": "self.version",
+            "zendframework/zend-memory": "self.version",
+            "zendframework/zend-mime": "self.version",
+            "zendframework/zend-modulemanager": "self.version",
+            "zendframework/zend-mvc": "self.version",
+            "zendframework/zend-navigation": "self.version",
+            "zendframework/zend-paginator": "self.version",
+            "zendframework/zend-permissions-acl": "self.version",
+            "zendframework/zend-permissions-rbac": "self.version",
+            "zendframework/zend-progressbar": "self.version",
+            "zendframework/zend-serializer": "self.version",
+            "zendframework/zend-server": "self.version",
+            "zendframework/zend-servicemanager": "self.version",
+            "zendframework/zend-session": "self.version",
+            "zendframework/zend-soap": "self.version",
+            "zendframework/zend-stdlib": "self.version",
+            "zendframework/zend-tag": "self.version",
+            "zendframework/zend-test": "self.version",
+            "zendframework/zend-text": "self.version",
+            "zendframework/zend-uri": "self.version",
+            "zendframework/zend-validator": "self.version",
+            "zendframework/zend-version": "self.version",
+            "zendframework/zend-view": "self.version",
+            "zendframework/zend-xmlrpc": "self.version"
+        },
+        "require-dev": {
+            "doctrine/common": ">=2.1",
+            "phpunit/phpunit": "3.7.*"
+        },
+        "suggest": {
+            "doctrine/common": "Doctrine\\Common >=2.1 for annotation features",
+            "ext-intl": "ext/intl for i18n features",
+            "pecl-weakref": "Implementation of weak references for Zend\\Stdlib\\CallbackHandler",
+            "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
+            "zendframework/zendservice-recaptcha": "ZendService\\ReCaptcha for rendering ReCaptchas in Zend\\Captcha and/or Zend\\Form"
+        },
+        "time": "2013-02-20 19:08:51",
+        "bin": [
+            "bin/classmap_generator.php"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.1-dev",
+                "dev-develop": "2.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Zend\\": "library/",
+                "ZendTest\\": "tests/"
+            },
+            "files": [
+                "library/Zend/Stdlib/compatibility/autoload.php",
+                "library/Zend/Session/compatibility/autoload.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Zend Framework 2",
+        "homepage": "http://framework.zend.com/",
+        "keywords": [
+            "framework",
+            "zf2"
+        ]
+    }
+]

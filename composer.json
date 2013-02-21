@@ -1,0 +1,24 @@
+{
+    "name": "AntonStoeckl/zf2mandangosample",
+    "description": "Sample project based on the Zend Framework 2 tutorial using MongoDB with Mandango",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2",
+        "mongodb",
+        "mandango",
+        "sample"
+    ],
+    "minimum-stability":"dev",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*",
+        "firephp/firephp-core": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Application": "module/Application/src",
+            "Album": "module/Album/src"
+        }
+    }
+}
