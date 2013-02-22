@@ -32,8 +32,7 @@ $mondator->setExtensions(array(
             'metadata_factory_output' => $resourcesDir . '/Mapping',
             'default_output'          => $resourcesDir,
         )),
-//        new Mandango\Extension\DocumentArrayAccess(),
-//        new Mandango\Extension\DocumentPropertyOverloading(),
+        new Zf2mandango\Mandango\Extension\DocumentArraySerializable(),
     ));
 
 // process

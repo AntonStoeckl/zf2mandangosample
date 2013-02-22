@@ -5,20 +5,25 @@ namespace AntonStoeckl\Resources;
 use Zend\InputFilter\Factory as InputFactory;
 use Zend\InputFilter\InputFilter;
 use Zend\InputFilter\InputFilterInterface;
-use Zend\Stdlib\ArraySerializableInterface;
 
 /**
  * AntonStoeckl\Resources\Album document.
  */
-class Album extends Base\Album implements ArraySerializableInterface, AlbumItemInterface
+class Album extends Base\Album implements AlbumItemInterface
 {
     protected $inputFilter;
 
+    /**
+     * @param \Zend\InputFilter\InputFilterInterface $inputFilter
+     */
     public function setInputFilter(InputFilterInterface $inputFilter)
     {
         $this->inputFilter = $inputFilter;
     }
 
+    /**
+     * @return \Zend\InputFilter\InputFilter
+     */
     public function getInputFilter()
     {
         if (!$this->inputFilter) {
@@ -76,27 +81,5 @@ class Album extends Base\Album implements ArraySerializableInterface, AlbumItemI
         }
 
         return $this->inputFilter;
-    }
-
-    /**
-     * Return an array representation of the object
-     *
-     * @return array
-     */
-    public function getArrayCopy()
-    {
-        return $this->toArray();
-    }
-
-    /**
-     * Exchange internal values from provided array
-     *
-     * @param array $array
-     *
-     * @return Album The document (fluent interface).
-     */
-    public function exchangeArray(array $array)
-    {
-        return $this->fromArray($array);
     }
 }

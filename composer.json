@@ -12,11 +12,15 @@
     "repositories":[
         {
             "type": "vcs",
+            "url": "https://github.com/AntonStoeckl/mondator"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/AntonStoeckl/mandango"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/AntonStoeckl/mondator"
+            "url": "https://github.com/AntonStoeckl/zf2mandango"
         }
     ],
     "minimum-stability":"dev",
@@ -24,7 +28,7 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
         "firephp/firephp-core": "dev-master",
-        "antonstoeckl/mandango" : "dev-master"
+        "antonstoeckl/zf2mandango" : "dev-master"
     },
     "autoload": {
         "psr-0": {

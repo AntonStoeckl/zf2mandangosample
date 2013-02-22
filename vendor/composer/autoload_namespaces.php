@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Zf2mandango' => $vendorDir . '/antonstoeckl/zf2mandango/src',
     'Zend\\' => $vendorDir . '/zendframework/zendframework/library/',
     'ZendTest\\' => $vendorDir . '/zendframework/zendframework/tests/',
     'Twig_' => $vendorDir . '/twig/twig/lib/',

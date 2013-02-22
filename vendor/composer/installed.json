@@ -291,5 +291,50 @@
         "support": {
             "source": "https://github.com/AntonStoeckl/mandango/tree/master"
         }
+    },
+    {
+        "name": "antonstoeckl/zf2mandango",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/AntonStoeckl/zf2mandango.git",
+            "reference": "97ab9d63692a0c216236b7614c8924ff8b29ffa2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/AntonStoeckl/zf2mandango/zipball/97ab9d63692a0c216236b7614c8924ff8b29ffa2",
+            "reference": "97ab9d63692a0c216236b7614c8924ff8b29ffa2",
+            "shasum": ""
+        },
+        "require": {
+            "antonstoeckl/mandango": "dev-master",
+            "antonstoeckl/mondator": "dev-master",
+            "php": ">=5.3.3",
+            "zendframework/zend-stdlib": "2.*"
+        },
+        "time": "2013-02-22 12:09:50",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Zf2mandango": "src"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "description": "Extensions and other stuff that makes it easier to use Mandango in an Zend Framework 2 project",
+        "keywords": [
+            "extension",
+            "framework",
+            "mandango",
+            "mongodb",
+            "zf2"
+        ],
+        "support": {
+            "source": "https://github.com/AntonStoeckl/zf2mandango/tree/master",
+            "issues": "https://github.com/AntonStoeckl/zf2mandango/issues"
+        }
     }
 ]

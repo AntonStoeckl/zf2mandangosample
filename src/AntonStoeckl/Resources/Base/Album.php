@@ -5,7 +5,7 @@ namespace AntonStoeckl\Resources\Base;
 /**
  * Base class of AntonStoeckl\Resources\Album document.
  */
-abstract class Album extends \Mandango\Document\Document
+abstract class Album extends \Mandango\Document\Document implements \Zend\Stdlib\ArraySerializableInterface
 {
     /**
      * Initializes the document defaults.
@@ -263,7 +263,7 @@ abstract class Album extends \Mandango\Document\Document
     /**
      * Export the document data to an array.
      *
-     * @param Boolean $withReferenceFields Whether include the fields of references or not (false by default).
+     * @param bool $withReferenceFields Whether include the fields of references or not (false by default).
      *
      * @return array An array with the document data.
      */
@@ -324,5 +324,27 @@ abstract class Album extends \Mandango\Document\Document
         }
 
         return $query;
+    }
+
+    /**
+     * Return an array representation of the object
+     *
+     * @return array
+     */
+    public function getArrayCopy()
+    {
+        return $this->toArray();
+    }
+
+    /**
+     * Exchange internal values from provided array
+     *
+     * @param array $array
+     *
+     * @return \AntonStoeckl\Resources\Album The document (fluent interface).
+     */
+    public function exchangeArray(array $array)
+    {
+        return $this->fromArray($array);
     }
 }
