@@ -199,7 +199,7 @@ abstract class Album extends \Mandango\Document\Document
      * Set a document data value by data name as string.
      *
      * @param string $name  The data name.
-     * @param mixed  $vaule The value.
+     * @param mixed  $value The value.
      *
      * @return mixed the data name setter return value.
      *
@@ -241,9 +241,9 @@ abstract class Album extends \Mandango\Document\Document
     /**
      * Imports data from an array.
      *
-     * @param array $data An array.
+     * @param array $array An array.
      *
-     * @return {$this->class} The document (fluent interface).
+     * @return Album The document (fluent interface).
      */
     public function fromArray(array $array)
     {
@@ -263,7 +263,7 @@ abstract class Album extends \Mandango\Document\Document
     /**
      * Export the document data to an array.
      *
-     * @param Boolean \$withReferenceFields Whether include the fields of references or not (false by default).
+     * @param Boolean $withReferenceFields Whether include the fields of references or not (false by default).
      *
      * @return array An array with the document data.
      */
