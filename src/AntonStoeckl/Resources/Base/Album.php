@@ -243,7 +243,7 @@ abstract class Album extends \Mandango\Document\Document
      *
      * @param array $array An array.
      *
-     * @return Album The document (fluent interface).
+     * @return \AntonStoeckl\Resources\Album The document (fluent interface).
      */
     public function fromArray(array $array)
     {

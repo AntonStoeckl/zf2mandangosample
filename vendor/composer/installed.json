@@ -38,18 +38,69 @@
         "homepage": "https://github.com/firephp/firephp-core"
     },
     {
+        "name": "twig/twig",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fabpot/Twig.git",
+            "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fabpot/Twig/zipball/15336c154c960f7e55e8b9fc1043ce7764ed7edc",
+            "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "time": "2013-02-21 06:47:52",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.12-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "http://twig.sensiolabs.org",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
         "name": "zendframework/zendframework",
         "version": "dev-develop",
         "version_normalized": "dev-develop",
         "source": {
             "type": "git",
             "url": "https://github.com/zendframework/zf2.git",
-            "reference": "46a8fda13273ce42ea2e4cddaf6a604b6ab7f5ed"
+            "reference": "717126b4f59bcbda7db157963a7ff1aa8ca930ab"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/zendframework/zf2/zipball/46a8fda13273ce42ea2e4cddaf6a604b6ab7f5ed",
-            "reference": "46a8fda13273ce42ea2e4cddaf6a604b6ab7f5ed",
+            "url": "https://api.github.com/repos/zendframework/zf2/zipball/717126b4f59bcbda7db157963a7ff1aa8ca930ab",
+            "reference": "717126b4f59bcbda7db157963a7ff1aa8ca930ab",
             "shasum": ""
         },
         "require": {
@@ -118,7 +169,7 @@
             "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
             "zendframework/zendservice-recaptcha": "ZendService\\ReCaptcha for rendering ReCaptchas in Zend\\Captcha and/or Zend\\Form"
         },
-        "time": "2013-02-20 19:08:51",
+        "time": "2013-02-21 21:03:32",
         "bin": [
             "bin/classmap_generator.php"
         ],
@@ -152,76 +203,25 @@
         ]
     },
     {
-        "name": "twig/twig",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/fabpot/Twig.git",
-            "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/fabpot/Twig/zipball/15336c154c960f7e55e8b9fc1043ce7764ed7edc",
-            "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.2.4"
-        },
-        "time": "2013-02-21 06:47:52",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.12-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Twig_": "lib/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Armin Ronacher",
-                "email": "armin.ronacher@active-4.com"
-            }
-        ],
-        "description": "Twig, the flexible, fast, and secure template language for PHP",
-        "homepage": "http://twig.sensiolabs.org",
-        "keywords": [
-            "templating"
-        ]
-    },
-    {
         "name": "antonstoeckl/mondator",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/AntonStoeckl/mondator.git",
-            "reference": "a51f77c7004fda3162a63cf4d886600bbaaa1ecd"
+            "reference": "87bb1cddbe793c142975e0c15fc0d5743e586a84"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/AntonStoeckl/mondator/zipball/a51f77c7004fda3162a63cf4d886600bbaaa1ecd",
-            "reference": "a51f77c7004fda3162a63cf4d886600bbaaa1ecd",
+            "url": "https://api.github.com/repos/AntonStoeckl/mondator/zipball/87bb1cddbe793c142975e0c15fc0d5743e586a84",
+            "reference": "87bb1cddbe793c142975e0c15fc0d5743e586a84",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0",
             "twig/twig": ">=1.2"
         },
-        "time": "2013-02-21 10:11:58",
+        "time": "2013-02-21 19:17:50",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -253,19 +253,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/AntonStoeckl/mandango.git",
-            "reference": "98b3c878273dfdb4c725a71a3114aa2bfc6f709d"
+            "reference": "6c787ae64329c29c54367ce6dfa563509d1e6937"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/AntonStoeckl/mandango/zipball/98b3c878273dfdb4c725a71a3114aa2bfc6f709d",
-            "reference": "98b3c878273dfdb4c725a71a3114aa2bfc6f709d",
+            "url": "https://api.github.com/repos/AntonStoeckl/mandango/zipball/6c787ae64329c29c54367ce6dfa563509d1e6937",
+            "reference": "6c787ae64329c29c54367ce6dfa563509d1e6937",
             "shasum": ""
         },
         "require": {
             "antonstoeckl/mondator": "dev-master",
             "php": ">=5.3.0"
         },
-        "time": "2013-02-21 10:16:21",
+        "time": "2013-02-22 10:10:41",
         "type": "library",
         "installation-source": "source",
         "autoload": {

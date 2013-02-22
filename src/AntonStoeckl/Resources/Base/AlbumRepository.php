@@ -52,7 +52,6 @@ abstract class AlbumRepository extends \Mandango\Repository
         $inserts = array();
         $updates = array();
         foreach ($documents as $document) {
-            /** @var $document \AntonStoeckl\Resources\Album */
             if ($document->isNew()) {
                 $inserts[spl_object_hash($document)] = $document;
             } else {
@@ -63,7 +62,6 @@ abstract class AlbumRepository extends \Mandango\Repository
         // insert
         if ($inserts) {
             foreach ($inserts as $oid => $document) {
-                /** @var $document \AntonStoeckl\Resources\Album */
                 $data = $document->queryForSave();
                 $data['_id'] = new \MongoId();
 
@@ -79,7 +77,6 @@ abstract class AlbumRepository extends \Mandango\Repository
 
         // updates
         foreach ($updates as $document) {
-            /** @var $document \AntonStoeckl\Resources\Album */
             if ($document->isModified()) {
                 $query = $document->queryForSave();
                 $collection->update(array('_id' => $this->idToMongo($document->getId())), $query, $updateOptions);
@@ -101,20 +98,18 @@ abstract class AlbumRepository extends \Mandango\Repository
 
         $ids = array();
         foreach ($documents as $document) {
-            /** @var $document \AntonStoeckl\Resources\Album */
             $ids[] = $id = $this->idToMongo($document->getId());
         }
 
         foreach ($documents as $document) {
-            /** @var $document \AntonStoeckl\Resources\Album */
             $document->processOnDelete();
         }
 
         $this->getCollection()->remove(array('_id' => array('$in' => $ids)));
 
+
         $identityMap =& $this->getIdentityMap()->allByReference();
         foreach ($documents as $document) {
-            /** @var $document \AntonStoeckl\Resources\Album */
             unset($identityMap[(string) $document->getId()]);
             $document->setIsNew(true);
             $document->setId(null);
