@@ -26,7 +26,7 @@ class Album
     }
 
     /**
-     * @return mixed
+     * @return array
      */
     public function fetchAllAlbums()
     {

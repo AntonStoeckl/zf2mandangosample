@@ -27,7 +27,8 @@ class AlbumController extends AbstractActionController
         $request = $this->getRequest();
 
         if ($request->isPost()) {
-            $album = new Album($this->getAlbumModel()->getMandango());
+            //TODO: move this into repo, it is manbdango specific
+            $album = new Album($this->getAlbumModel()->getAlbumRepository()->getMandango());
             $form->setInputFilter($album->getInputFilter());
             $form->setData($request->getPost());
 
