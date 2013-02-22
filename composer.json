@@ -1,7 +1,7 @@
 {
     "name": "AntonStoeckl/zf2mandangosample",
     "description": "Sample project based on the Zend Framework 2 tutorial using MongoDB with Mandango",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "keywords": [
         "framework",
         "zf2",
