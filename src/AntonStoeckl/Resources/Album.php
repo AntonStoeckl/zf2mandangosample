@@ -78,11 +78,23 @@ class Album extends Base\Album implements ArraySerializableInterface, AlbumItemI
         return $this->inputFilter;
     }
 
+    /**
+     * Return an array representation of the object
+     *
+     * @return array
+     */
     public function getArrayCopy()
     {
         return $this->toArray();
     }
 
+    /**
+     * Exchange internal values from provided array
+     *
+     * @param array $array
+     *
+     * @return Album The document (fluent interface).
+     */
     public function exchangeArray(array $array)
     {
         return $this->fromArray($array);
