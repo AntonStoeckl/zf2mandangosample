@@ -12,6 +12,11 @@ class Album
      */
     protected $albumRepository;
 
+    /**
+     * The constructor
+     *
+     * @param \AntonStoeckl\Resources\AlbumRepositoryInterface $albumRepository
+     */
     public function __construct(AlbumRepositoryInterface $albumRepository)
     {
         $this->albumRepository = $albumRepository;
@@ -23,6 +28,14 @@ class Album
     public function getAlbumRepository()
     {
         return $this->albumRepository;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function createNewAlbum()
+    {
+        return $this->albumRepository->createNewAlbum();
     }
 
     /**
@@ -53,8 +66,8 @@ class Album
     /**
      * @param string $id
      */
-    public function deleteAlbum($id)
+    public function deleteAlbumById($id)
     {
-        $this->albumRepository->deleteAlbum($id);
+        $this->albumRepository->deleteAlbumById($id);
     }
 }

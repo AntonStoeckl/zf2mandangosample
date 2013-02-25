@@ -3,17 +3,34 @@
 namespace AntonStoeckl\Resources;
 
 /**
- * Repository of AntonStoeckl\Resources\Album document.
+ * Repository of \AntonStoeckl\Resources\Album document.
  */
 class AlbumRepository
     extends Base\AlbumRepository
     implements AlbumRepositoryInterface
 {
+    /**
+     * @return mixed
+     */
+    public function createNewAlbum()
+    {
+        $class = '\\' . $this->getDocumentClass();
+
+        return new $class($this->getMandango());
+    }
+
+    /**
+     * @return array
+     */
     public function fetchAllAlbums()
     {
         return $this->createQuery()->all();
     }
 
+    /**
+     * @param string $id
+     * @return \Mandango\Document\Document|null
+     */
     public function fetchOneAlbumById($id)
     {
         $query = $this->createQuery()
@@ -22,12 +39,18 @@ class AlbumRepository
         return $query->one();
     }
 
+    /**
+     * @param AlbumItemInterface $album
+     */
     public function saveAlbum(AlbumItemInterface $album)
     {
         $this->save($album);
     }
 
-    public function deleteAlbum($id)
+    /**
+     * @param string $id
+     */
+    public function deleteAlbumById($id)
     {
         $album = $this->fetchOneAlbumById($id);
 

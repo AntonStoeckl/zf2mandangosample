@@ -6,7 +6,6 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Album\Form\AlbumForm;
 use Album\Model;
-use AntonStoeckl\Resources\Album;
 
 class AlbumController extends AbstractActionController
 {
@@ -27,8 +26,7 @@ class AlbumController extends AbstractActionController
         $request = $this->getRequest();
 
         if ($request->isPost()) {
-            //TODO: move this into repo, it is manbdango specific
-            $album = new Album($this->getAlbumModel()->getAlbumRepository()->getMandango());
+            $album = $this->getAlbumModel()->createNewAlbum();
             $form->setInputFilter($album->getInputFilter());
             $form->setData($request->getPost());
 
@@ -94,7 +92,7 @@ class AlbumController extends AbstractActionController
 
             if ($del == 'Yes') {
                 $id = $request->getPost('id');
-                $this->getAlbumModel()->deleteAlbum($id);
+                $this->getAlbumModel()->deleteAlbumById($id);
             }
 
             // Redirect to list of albums
