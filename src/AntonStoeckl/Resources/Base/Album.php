@@ -263,7 +263,7 @@ abstract class Album extends \Mandango\Document\Document implements \Zend\Stdlib
     /**
      * Export the document data to an array.
      *
-     * @param bool $withReferenceFields Whether include the fields of references or not (false by default).
+     * @param Boolean $withReferenceFields Whether include the fields of references or not (false by default).
      *
      * @return array An array with the document data.
      */
