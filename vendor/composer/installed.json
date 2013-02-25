@@ -38,24 +38,113 @@
         "homepage": "https://github.com/firephp/firephp-core"
     },
     {
+        "name": "antonstoeckl/mondator",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/AntonStoeckl/mondator.git",
+            "reference": "87bb1cddbe793c142975e0c15fc0d5743e586a84"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/AntonStoeckl/mondator/zipball/87bb1cddbe793c142975e0c15fc0d5743e586a84",
+            "reference": "87bb1cddbe793c142975e0c15fc0d5743e586a84",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "twig/twig": ">=1.2"
+        },
+        "time": "2013-02-21 19:17:50",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Mandango\\Mondator\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Pablo Díez",
+                "email": "pablodip@gmail.com"
+            }
+        ],
+        "description": "Easy and flexible class generator for PHP",
+        "keywords": [
+            "class-generator"
+        ],
+        "support": {
+            "source": "https://github.com/AntonStoeckl/mondator/tree/master"
+        }
+    },
+    {
+        "name": "antonstoeckl/zf2mandango",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/AntonStoeckl/zf2mandango.git",
+            "reference": "97ab9d63692a0c216236b7614c8924ff8b29ffa2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/AntonStoeckl/zf2mandango/zipball/97ab9d63692a0c216236b7614c8924ff8b29ffa2",
+            "reference": "97ab9d63692a0c216236b7614c8924ff8b29ffa2",
+            "shasum": ""
+        },
+        "require": {
+            "antonstoeckl/mandango": "dev-master",
+            "antonstoeckl/mondator": "dev-master",
+            "php": ">=5.3.3",
+            "zendframework/zend-stdlib": "2.*"
+        },
+        "time": "2013-02-22 12:09:50",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Zf2mandango": "src"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "description": "Extensions and other stuff that makes it easier to use Mandango in an Zend Framework 2 project",
+        "keywords": [
+            "extension",
+            "framework",
+            "mandango",
+            "mongodb",
+            "zf2"
+        ],
+        "support": {
+            "source": "https://github.com/AntonStoeckl/zf2mandango/tree/master",
+            "issues": "https://github.com/AntonStoeckl/zf2mandango/issues"
+        }
+    },
+    {
         "name": "twig/twig",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/fabpot/Twig.git",
-            "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc"
+            "reference": "4458a2cb66a016440543ef34a07f540e14bee92e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/fabpot/Twig/zipball/15336c154c960f7e55e8b9fc1043ce7764ed7edc",
-            "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc",
+            "url": "https://api.github.com/repos/fabpot/Twig/zipball/4458a2cb66a016440543ef34a07f540e14bee92e",
+            "reference": "4458a2cb66a016440543ef34a07f540e14bee92e",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.4"
         },
-        "time": "2013-02-21 06:47:52",
+        "time": "2013-02-25 06:01:12",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -95,12 +184,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/zendframework/zf2.git",
-            "reference": "717126b4f59bcbda7db157963a7ff1aa8ca930ab"
+            "reference": "5c004f60b75e7dc4bc8a00f7bd7170c6b740985f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/zendframework/zf2/zipball/717126b4f59bcbda7db157963a7ff1aa8ca930ab",
-            "reference": "717126b4f59bcbda7db157963a7ff1aa8ca930ab",
+            "url": "https://api.github.com/repos/zendframework/zf2/zipball/5c004f60b75e7dc4bc8a00f7bd7170c6b740985f",
+            "reference": "5c004f60b75e7dc4bc8a00f7bd7170c6b740985f",
             "shasum": ""
         },
         "require": {
@@ -169,7 +258,7 @@
             "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
             "zendframework/zendservice-recaptcha": "ZendService\\ReCaptcha for rendering ReCaptchas in Zend\\Captcha and/or Zend\\Form"
         },
-        "time": "2013-02-21 21:03:32",
+        "time": "2013-02-22 17:38:23",
         "bin": [
             "bin/classmap_generator.php"
         ],
@@ -203,69 +292,25 @@
         ]
     },
     {
-        "name": "antonstoeckl/mondator",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/AntonStoeckl/mondator.git",
-            "reference": "87bb1cddbe793c142975e0c15fc0d5743e586a84"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/AntonStoeckl/mondator/zipball/87bb1cddbe793c142975e0c15fc0d5743e586a84",
-            "reference": "87bb1cddbe793c142975e0c15fc0d5743e586a84",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "twig/twig": ">=1.2"
-        },
-        "time": "2013-02-21 19:17:50",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Mandango\\Mondator\\": "src/"
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Pablo Díez",
-                "email": "pablodip@gmail.com"
-            }
-        ],
-        "description": "Easy and flexible class generator for PHP",
-        "keywords": [
-            "class-generator"
-        ],
-        "support": {
-            "source": "https://github.com/AntonStoeckl/mondator/tree/master"
-        }
-    },
-    {
         "name": "antonstoeckl/mandango",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/AntonStoeckl/mandango.git",
-            "reference": "6c787ae64329c29c54367ce6dfa563509d1e6937"
+            "reference": "5832aae210a776fbf294f4d07ca1de443a73f897"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/AntonStoeckl/mandango/zipball/6c787ae64329c29c54367ce6dfa563509d1e6937",
-            "reference": "6c787ae64329c29c54367ce6dfa563509d1e6937",
+            "url": "https://api.github.com/repos/AntonStoeckl/mandango/zipball/5832aae210a776fbf294f4d07ca1de443a73f897",
+            "reference": "5832aae210a776fbf294f4d07ca1de443a73f897",
             "shasum": ""
         },
         "require": {
             "antonstoeckl/mondator": "dev-master",
             "php": ">=5.3.0"
         },
-        "time": "2013-02-22 10:10:41",
+        "time": "2013-02-25 20:29:42",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -290,51 +335,6 @@
         ],
         "support": {
             "source": "https://github.com/AntonStoeckl/mandango/tree/master"
-        }
-    },
-    {
-        "name": "antonstoeckl/zf2mandango",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/AntonStoeckl/zf2mandango.git",
-            "reference": "97ab9d63692a0c216236b7614c8924ff8b29ffa2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/AntonStoeckl/zf2mandango/zipball/97ab9d63692a0c216236b7614c8924ff8b29ffa2",
-            "reference": "97ab9d63692a0c216236b7614c8924ff8b29ffa2",
-            "shasum": ""
-        },
-        "require": {
-            "antonstoeckl/mandango": "dev-master",
-            "antonstoeckl/mondator": "dev-master",
-            "php": ">=5.3.3",
-            "zendframework/zend-stdlib": "2.*"
-        },
-        "time": "2013-02-22 12:09:50",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Zf2mandango": "src"
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "description": "Extensions and other stuff that makes it easier to use Mandango in an Zend Framework 2 project",
-        "keywords": [
-            "extension",
-            "framework",
-            "mandango",
-            "mongodb",
-            "zf2"
-        ],
-        "support": {
-            "source": "https://github.com/AntonStoeckl/zf2mandango/tree/master",
-            "issues": "https://github.com/AntonStoeckl/zf2mandango/issues"
         }
     }
 ]
