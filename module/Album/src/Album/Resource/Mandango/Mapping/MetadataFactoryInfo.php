@@ -1,10 +1,10 @@
 <?php
 
-namespace AntonStoeckl\Resources\Mapping;
+namespace Album\Resource\Mandango\Mapping;
 
 class MetadataFactoryInfo
 {
-    public function getAntonStoecklResourcesAlbumClass()
+    public function getAlbumResourceMandangoAlbumClass()
     {
         return array(
             'isEmbedded' => false,

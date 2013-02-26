@@ -2,20 +2,20 @@
 
 namespace Album\Model;
 
-use AntonStoeckl\Resources\AlbumRepositoryInterface;
-use AntonStoeckl\Resources\AlbumItemInterface;
+use Album\Resource\Mandango\AlbumRepositoryInterface;
+use Album\Resource\Mandango\AlbumItemInterface;
 
 class Album
 {
     /**
-     * @var \AntonStoeckl\Resources\AlbumRepositoryInterface
+     * @var \Album\Resource\Mandango\AlbumRepositoryInterface
      */
     protected $albumRepository;
 
     /**
      * The constructor
      *
-     * @param \AntonStoeckl\Resources\AlbumRepositoryInterface $albumRepository
+     * @param \Album\Resource\Mandango\AlbumRepositoryInterface $albumRepository
      */
     public function __construct(AlbumRepositoryInterface $albumRepository)
     {
@@ -23,7 +23,7 @@ class Album
     }
 
     /**
-     * @return \AntonStoeckl\Resources\AlbumRepositoryInterface
+     * @return \Album\Resource\Mandango\AlbumRepositoryInterface
      */
     public function getAlbumRepository()
     {
@@ -48,7 +48,7 @@ class Album
 
     /**
      * @param string $id
-     * @return \AntonStoeckl\Resources\AlbumItemInterface
+     * @return \Album\Resource\Mandango\AlbumItemInterface
      */
     public function fetchOneAlbumById($id)
     {
@@ -56,7 +56,7 @@ class Album
     }
 
     /**
-     * @param \AntonStoeckl\Resources\AlbumItemInterface $album
+     * @param \Album\Resource\Mandango\AlbumItemInterface $album
      */
     public function saveAlbum(AlbumItemInterface $album)
     {

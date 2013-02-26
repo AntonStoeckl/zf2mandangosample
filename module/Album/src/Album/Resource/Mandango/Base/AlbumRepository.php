@@ -1,9 +1,9 @@
 <?php
 
-namespace AntonStoeckl\Resources\Base;
+namespace Album\Resource\Mandango\Base;
 
 /**
- * Base class of repository of AntonStoeckl\Resources\Album document.
+ * Base class of repository of Album\Resource\Mandango\Album document.
  */
 abstract class AlbumRepository extends \Mandango\Repository
 {
@@ -12,7 +12,7 @@ abstract class AlbumRepository extends \Mandango\Repository
      */
     public function __construct(\Mandango\Mandango $mandango)
     {
-        $this->documentClass = 'AntonStoeckl\Resources\Album';
+        $this->documentClass = 'Album\Resource\Mandango\Album';
         $this->isFile = false;
         $this->collectionName = 'album';
 

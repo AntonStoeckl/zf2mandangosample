@@ -8,7 +8,7 @@ chdir(dirname(__DIR__));
 // Setup autoloading
 require 'vendor/autoload.php';
 
-$resourcesDir = 'src/AntonStoeckl/Resources';
+$resourcesDir = 'module/Album/src/Album/Resource/Mandango';
 
 use Mandango\Mondator\Mondator;
 
@@ -16,7 +16,7 @@ $mondator = new Mondator();
 
 // assign the config classes
 $mondator->setConfigClasses(array(
-        'AntonStoeckl\Resources\Album' => array(
+        'Album\Resource\Mandango\Album' => array(
             'collection' => 'album',
             'fields' => array(
                 'artist' => 'string',
@@ -28,7 +28,7 @@ $mondator->setConfigClasses(array(
 // assign extensions
 $mondator->setExtensions(array(
         new Mandango\Extension\Core(array(
-            'metadata_factory_class'  => 'AntonStoeckl\Resources\Mapping\MetadataFactory',
+            'metadata_factory_class'  => 'Album\Resource\Mandango\Mapping\MetadataFactory',
             'metadata_factory_output' => $resourcesDir . '/Mapping',
             'default_output'          => $resourcesDir,
         )),

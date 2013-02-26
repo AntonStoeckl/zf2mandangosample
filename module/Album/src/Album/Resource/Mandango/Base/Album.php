@@ -1,9 +1,9 @@
 <?php
 
-namespace AntonStoeckl\Resources\Base;
+namespace Album\Resource\Mandango\Base;
 
 /**
- * Base class of AntonStoeckl\Resources\Album document.
+ * Base class of Album\Resource\Mandango\Album document.
  */
 abstract class Album extends \Mandango\Document\Document implements \Zend\Stdlib\ArraySerializableInterface
 {
@@ -20,7 +20,7 @@ abstract class Album extends \Mandango\Document\Document implements \Zend\Stdlib
      * @param array $data  The document data.
      * @param bool  $clean Whether clean the document.
      *
-     * @return \AntonStoeckl\Resources\Album The document (fluent interface).
+     * @return \Album\Resource\Mandango\Album The document (fluent interface).
      */
     public function setDocumentData($data, $clean = false)
     {
@@ -55,7 +55,7 @@ abstract class Album extends \Mandango\Document\Document implements \Zend\Stdlib
      *
      * @param mixed $value The value.
      *
-     * @return \AntonStoeckl\Resources\Album The document (fluent interface).
+     * @return \Album\Resource\Mandango\Album The document (fluent interface).
      */
     public function setArtist($value)
     {
@@ -117,7 +117,7 @@ abstract class Album extends \Mandango\Document\Document implements \Zend\Stdlib
      *
      * @param mixed $value The value.
      *
-     * @return \AntonStoeckl\Resources\Album The document (fluent interface).
+     * @return \Album\Resource\Mandango\Album The document (fluent interface).
      */
     public function setTitle($value)
     {
@@ -243,7 +243,7 @@ abstract class Album extends \Mandango\Document\Document implements \Zend\Stdlib
      *
      * @param array $array An array.
      *
-     * @return \AntonStoeckl\Resources\Album The document (fluent interface).
+     * @return \Album\Resource\Mandango\Album The document (fluent interface).
      */
     public function fromArray(array $array)
     {
@@ -341,7 +341,7 @@ abstract class Album extends \Mandango\Document\Document implements \Zend\Stdlib
      *
      * @param array $array
      *
-     * @return \AntonStoeckl\Resources\Album The document (fluent interface).
+     * @return \Album\Resource\Mandango\Album The document (fluent interface).
      */
     public function exchangeArray(array $array)
     {

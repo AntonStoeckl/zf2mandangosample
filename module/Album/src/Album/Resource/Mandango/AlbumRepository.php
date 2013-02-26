@@ -1,16 +1,16 @@
 <?php
 
-namespace AntonStoeckl\Resources;
+namespace Album\Resource\Mandango;
 
 /**
- * Repository of \AntonStoeckl\Resources\Album document.
+ * Repository of Album\Resource\Mandango\Album document.
  */
-class AlbumRepository
-    extends Base\AlbumRepository
-    implements AlbumRepositoryInterface
+class AlbumRepository extends Base\AlbumRepository implements AlbumRepositoryInterface
 {
     /**
-     * @return mixed
+     * Creates a new (empty) album document.
+     *
+     * @return \Album\Resource\Mandango\Album
      */
     public function createNewAlbum()
     {
@@ -20,6 +20,8 @@ class AlbumRepository
     }
 
     /**
+     * Fetches an array of all album documents.
+     *
      * @return array
      */
     public function fetchAllAlbums()
@@ -28,8 +30,10 @@ class AlbumRepository
     }
 
     /**
+     * Fetch one album document by it's id.
+     *
      * @param string $id
-     * @return \Mandango\Document\Document|null
+     * @return \Album\Resource\Mandango\Album|null
      */
     public function fetchOneAlbumById($id)
     {
@@ -40,6 +44,8 @@ class AlbumRepository
     }
 
     /**
+     * Save (persist) an album document.
+     *
      * @param AlbumItemInterface $album
      */
     public function saveAlbum(AlbumItemInterface $album)
@@ -48,6 +54,8 @@ class AlbumRepository
     }
 
     /**
+     * Delete an album document by it's id.
+     *
      * @param string $id
      */
     public function deleteAlbumById($id)

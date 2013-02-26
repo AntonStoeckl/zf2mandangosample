@@ -2,15 +2,6 @@
 
 namespace Album;
 
-use Album\Model\Album;
-use Mandango\Cache\FilesystemCache;
-use Mandango\Connection;
-use Mandango\Mandango;
-use AntonStoeckl\Resources\Mapping\MetadataFactory;
-use Zend\Log\Writer\FirePhp as FirePhpWriter;
-use Zend\Log\Logger;
-use Zend\Log\Formatter\FirePhp as FirePhpFormatter;
-
 class Module
 {
     public function getConfig()
@@ -23,13 +14,13 @@ class Module
         return array(
             'factories' => array(
                 'LogFormatter' => function($sm) {
-                    return new FirePhpFormatter();
+                    return new \Zend\Log\Formatter\FirePhp();
                 },
                 'LogWriter' => function($sm) {
-                    return new FirePhpWriter();
+                    return new \Zend\Log\Writer\FirePhp();
                 },
                 'Logger' => function($sm) {
-                    $logger = new Logger();
+                    $logger = new \Zend\Log\Logger();
                     $writer = $sm->get('LogWriter');
                     $formatter = $sm->get('LogFormatter');
                     $writer->setFormatter($formatter);
@@ -37,18 +28,18 @@ class Module
                     return $logger;
                 },
                 'Mandango' => function($sm) {
-                    $metadataFactory = new MetadataFactory();
-                    $cache = new FilesystemCache('./data/cache/mandango');
+                    $metadataFactory = new \Album\Resource\Mandango\Mapping\MetadataFactory();
+                    $cache = new \Mandango\Cache\FilesystemCache('./data/cache/mandango');
                     $logger = $sm->get('Logger');
                     $mandangoLogger = function(array $log) use ($logger) {
                         $logger->info('Mandango query logger', $log);
                     };
-                    $mandango = new Mandango($metadataFactory, $cache, $mandangoLogger);
+                    $mandango = new \Mandango\Mandango($metadataFactory, $cache, $mandangoLogger);
                     $config = $sm->get('Config');
                     $mongoDbConfig = isset($config['mongodb'])
                         ? $config['mongodb']
                         : array('uri' => 'mongodb://localhost:27017', 'database' => 'default');
-                    $connection = new Connection(
+                    $connection = new \Mandango\Connection(
                         $mongoDbConfig['uri'],
                         $mongoDbConfig['database']
                     );
@@ -56,13 +47,13 @@ class Module
                     $mandango->setDefaultConnectionName('primary');
                     return $mandango;
                 },
-                'AntonStoeckl\Resources\AlbumRepository' => function($sm) {
+                'Album\Resource\Mandango\AlbumRepository' => function($sm) {
                     $mandango = $sm->get('Mandango');
-                    return $mandango->getRepository('AntonStoeckl\Resources\Album');
+                    return $mandango->getRepository('Album\Resource\Mandango\Album');
                 },
                 'Album\Model\Album' => function($sm) {
-                    $repository = $sm->get('AntonStoeckl\Resources\AlbumRepository');
-                    return new Album($repository);
+                    $repository = $sm->get('Album\Resource\Mandango\AlbumRepository');
+                    return new \Album\Model\Album($repository);
                 },
             ),
         );

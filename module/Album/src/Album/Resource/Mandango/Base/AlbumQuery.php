@@ -1,9 +1,9 @@
 <?php
 
-namespace AntonStoeckl\Resources\Base;
+namespace Album\Resource\Mandango\Base;
 
 /**
- * Base class of query of AntonStoeckl\Resources\Album document.
+ * Base class of query of Album\Resource\Mandango\Album document.
  */
 abstract class AlbumQuery extends \Mandango\Query
 {

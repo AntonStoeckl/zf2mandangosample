@@ -1,10 +1,10 @@
 <?php
 
-namespace AntonStoeckl\Resources\Mapping;
+namespace Album\Resource\Mandango\Mapping;
 
 class MetadataFactory extends \Mandango\MetadataFactory
 {
     protected $classes = array(
-        'AntonStoeckl\\Resources\\Album' => false,
+        'Album\\Resource\\Mandango\\Album' => false,
     );
 }

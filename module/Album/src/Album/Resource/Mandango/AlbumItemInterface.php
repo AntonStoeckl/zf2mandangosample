@@ -1,6 +1,6 @@
 <?php
 
-namespace AntonStoeckl\Resources;
+namespace Album\Resource\Mandango;
 
 use Zend\InputFilter\InputFilterInterface;
 

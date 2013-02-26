@@ -1,13 +1,13 @@
 <?php
 
-namespace AntonStoeckl\Resources;
+namespace Album\Resource\Mandango;
 
 use Zend\InputFilter\Factory as InputFactory;
 use Zend\InputFilter\InputFilter;
 use Zend\InputFilter\InputFilterInterface;
 
 /**
- * AntonStoeckl\Resources\Album document.
+ * Album\Resource\Mandango\Album document.
  */
 class Album extends Base\Album implements AlbumItemInterface
 {
