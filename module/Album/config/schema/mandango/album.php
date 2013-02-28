@@ -4,7 +4,7 @@ return array(
         'collection' => 'album',
         'fields' => array(
             'artist' => array('type' => 'string', 'dbName' => 'artist'),
-            'title'  => array('type' => 'string', 'dbName' => 'artist'),
+            'title'  => array('type' => 'string', 'dbName' => 'title'),
         ),
     ),
 );
