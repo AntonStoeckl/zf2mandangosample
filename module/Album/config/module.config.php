@@ -28,5 +28,12 @@ return array(
             'album' => __DIR__ . '/../view',
         ),
     ),
+    'mandango' => array(
+        'cache_dir' => './module/Album/data/cache/mandango',
+        'mondator' => array(
+            'schema_config_dir' => './module/Album/config/schema/mandango',
+            'resources_output_dir' => './module/Album/src/Album/Resource/Mandango',
+        ),
+    ),
 );
 
